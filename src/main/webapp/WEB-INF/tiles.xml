@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">          
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="base.definition" template="/WEB-INF/layouts/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/footer.jsp" />  
+    </definition>  
+ 
+ 	<!-- Home Page  -->
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="Home" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/home.jsp" />  
+    </definition>   
+    
+     	<!-- Registration Page  -->
+    <definition name="registration" extends="base.definition">  
+        <put-attribute name="title" value="Registration" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/registration.jsp" />  
+    </definition>  
+       
+         <!-- Login Page  -->
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/login.jsp" />  
+    </definition> 
+    
+           <!-- Department View Page  -->
+    <definition name="department" extends="base.definition">  
+        <put-attribute name="title" value="Departmentview" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/departmentview.jsp" />  
+    </definition> 
+    
+              <!-- Employee List view  Page  -->
+    <definition name="empList" extends="base.definition">  
+        <put-attribute name="title" value="empList" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/empList.jsp" />  
+    </definition> 
+ 
+     <!-- Employee List view  Page  -->
+    <definition name="mailpage" extends="base.definition">  
+        <put-attribute name="title" value="mailpage" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/mailpage.jsp" />  
+    </definition> 
+ 
+   
+</tiles-definitions> 
